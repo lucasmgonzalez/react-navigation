@@ -107,7 +107,6 @@ const Navigation = ({nav: navigationItems}) => {
           <NavigationLink href={'/' + item.url_path}>
             {item.name}
           </NavigationLink>
-
           {item.children_data && (
             <DropdownMenu 
               show={Number.parseInt(hoveredItem) === item.id}
